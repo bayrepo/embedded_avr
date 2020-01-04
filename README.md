@@ -1,16 +1,12 @@
 # embedded_avr
 
-Examples of code for avr controllers
+**Examples of code for avr controllers**
 
-attiny13a/uart_program - пример, как добавить передачу передачу данных с МК attiny13a по UART на скорости 9600 (пример собран c источников: https://habr.com/ru/post/250995/ и http://we.easyelectronics.ru/AVR/uart-programmnyy-na-atiny13a.html)
-
-attiny45/i2c_slave - пример программного i2c протокола для контроллера attiny45
-
-atmega8/monitor_i2c_uart - программа, по выводу информации с источников подключаемых по i2c и по UART для МК ATmega8
-
-attiny13a/joystyk_transmitter_attiny13a - программа для опроса джойстика и посылки информации с джойстика по радиоканалу. На основе кода https://github.com/cano64/ManchesterRF
-
-attiny45/joystyk_reciver_attiny45 - программа приема информации с джойстика и управление серводвигателями на сонове полученной ифнормации, на основе кода https://github.com/cano64/ManchesterRF
+* attiny13a/uart_program - пример, как добавить передачу передачу данных с МК attiny13a по UART на скорости 9600 (пример собран c источников: https://habr.com/ru/post/250995/ и http://we.easyelectronics.ru/AVR/uart-programmnyy-na-atiny13a.html)
+* attiny45/i2c_slave - пример программного i2c протокола для контроллера attiny45
+* atmega8/monitor_i2c_uart - программа, по выводу информации с источников подключаемых по i2c и по UART для МК ATmega8
+* attiny13a/joystyk_transmitter_attiny13a - программа для опроса джойстика и посылки информации с джойстика по радиоканалу. На основе кода https://github.com/cano64/ManchesterRF
+* attiny45/joystyk_reciver_attiny45 - программа приема информации с джойстика и управление серводвигателями на сонове полученной ифнормации, на основе кода https://github.com/cano64/ManchesterRF
 
 
-Более детальная информация по проектам на сайте http://putey.net/
+Более детальная информация по проектам на [сайте](http://putey.net/)
