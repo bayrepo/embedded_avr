@@ -1,0 +1,280 @@
+(pcb D:\NextCloud\kicad\joystick_reciver\reciver\reciver.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(5.1.5)-3")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  160046 -106740  101540 -106740  101540 -73600  160046 -73600
+            160046 -106740)
+    )
+    (via "Via[0-1]_1600:800_um")
+    (rule
+      (width 500)
+      (clearance 500.1)
+      (clearance 500.1 (type default_smd))
+      (clearance 125 (type smd_smd))
+    )
+  )
+  (placement
+    (component transmitter:Socket_3_My
+      (place U3 152400 -96520 front 0 (PN LM317_3PinPackage))
+      (place U2 144780 -78740 front 0 (PN L7805))
+    )
+    (component "transmitter:DIP-8_296"
+      (place U1 119380 -81280 front 270 (PN "ATtiny45-20PU"))
+    )
+    (component transmitter:R_my_5_08
+      (place R5 121920 -101600 front 0 (PN 1K))
+      (place R4 132080 -101600 front 0 (PN 1K))
+      (place R3 132080 -96520 front 0 (PN 1K))
+      (place R2 142240 -101600 front 0 (PN 1K))
+      (place R1 142240 -96520 front 0 (PN 10K))
+      (place C3 121920 -96520 front 0 (PN 100nF))
+      (place C2 134620 -78740 front 0 (PN 0.33uF))
+      (place C1 134620 -83820 front 0 (PN 100nF))
+    )
+    (component transmitter:Socket_2_My
+      (place J3 152400 -78740 front 0 (PN PWR))
+    )
+    (component reciver:Socket_Strip_Straight_1x04_Pitch2.54mm
+      (place J2 106680 -101600 front 90 (PN "XY-MK-5V"))
+    )
+    (component reciver:Socket_My_7_Pitch2.54mm
+      (place J1 108500 -93850 front 180 (PN DRIVES))
+    )
+  )
+  (library
+    (image transmitter:Socket_3_My
+      (outline (path signal 100  -1270 1270  -1270 -6350))
+      (outline (path signal 100  -1270 -6350  1270 -6350))
+      (outline (path signal 100  1270 -6350  1270 1270))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 120  -1330 -1270  -1330 -6410))
+      (outline (path signal 120  -1330 -6410  1330 -6410))
+      (outline (path signal 120  1330 -6410  1330 -1270))
+      (outline (path signal 120  1330 -1270  -1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -6850))
+      (outline (path signal 50  -1800 -6850  1800 -6850))
+      (outline (path signal 50  1800 -6850  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_2000x2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 0 -2540)
+      (pin Round[A]Pad_2000_um 3 0 -5080)
+    )
+    (image "transmitter:DIP-8_296"
+      (outline (path signal 50  -5060 -5010  -5060 5010))
+      (outline (path signal 50  5060 -5010  -5060 -5010))
+      (outline (path signal 50  5060 5010  5060 -5010))
+      (outline (path signal 50  -5060 5010  5060 5010))
+      (outline (path signal 120  -5310 -1753.33  -5310 -5260))
+      (outline (path signal 120  -4950 -1753.33  -5310 -1753.33))
+      (outline (path signal 120  -4950 1753.33  -4950 -1753.33))
+      (outline (path signal 120  -5310 1753.33  -4950 1753.33))
+      (outline (path signal 120  -5310 5260  -5310 1753.33))
+      (outline (path signal 120  5310 5260  -5310 5260))
+      (outline (path signal 120  5310 -5260  5310 5260))
+      (outline (path signal 120  -5310 -5260  5310 -5260))
+      (pin Round[A]Pad_2000_um 4 3810 -3760)
+      (pin Round[A]Pad_2000_um 5 3810 3760)
+      (pin Round[A]Pad_2000_um 3 1270 -3760)
+      (pin Round[A]Pad_2000_um 6 1270 3760)
+      (pin Round[A]Pad_2000_um 2 -1270 -3760)
+      (pin Round[A]Pad_2000_um 7 -1270 3760)
+      (pin Round[A]Pad_2000_um 1 -3810 -3760)
+      (pin Rect[A]Pad_2000x2000_um 8 -3810 3760)
+    )
+    (image transmitter:R_my_5_08
+      (outline (path signal 100  1250 0  1174.62 -427.525  957.556 -803.485  625 -1082.53
+            217.06 -1231.01  -217.06 -1231.01  -625 -1082.53  -957.556 -803.485
+            -1174.62 -427.525  -1250 0  -1174.62 427.525  -957.556 803.485
+            -625 1082.53  -217.06 1231.01  217.06 1231.01  625 1082.53  957.556 803.485
+            1174.62 427.525  1250 0))
+      (outline (path signal 120  1310 0  1231 -448.046  1003.52 -842.052  655 -1134.49
+            227.479 -1290.1  -227.479 -1290.1  -655 -1134.49  -1003.52 -842.052
+            -1231 -448.046  -1310 0  -1231 448.046  -1003.52 842.052  -655 1134.49
+            -227.479 1290.1  227.479 1290.1  655 1134.49  1003.52 842.052
+            1231 448.046  1310 0))
+      (outline (path signal 100  0 0  5080 0))
+      (outline (path signal 120  1310 0  3980 0))
+      (outline (path signal 50  -1600 1600  -1600 -1600))
+      (outline (path signal 50  -1600 -1600  6200 -1600))
+      (outline (path signal 50  6200 -1600  6200 1600))
+      (outline (path signal 50  6200 1600  -1600 1600))
+      (pin Round[A]Pad_2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 5080 0)
+    )
+    (image transmitter:Socket_2_My
+      (outline (path signal 100  -1270 1270  -1270 -3810))
+      (outline (path signal 100  -1270 -3810  1270 -3810))
+      (outline (path signal 100  1270 -3810  1270 1270))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 120  -1330 -1270  -1330 -3870))
+      (outline (path signal 120  -1330 -3870  1330 -3870))
+      (outline (path signal 120  1330 -3870  1330 -1270))
+      (outline (path signal 120  1330 -1270  -1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -4350))
+      (outline (path signal 50  -1800 -4350  1800 -4350))
+      (outline (path signal 50  1800 -4350  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_2000x2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 0 -2540)
+    )
+    (image reciver:Socket_Strip_Straight_1x04_Pitch2.54mm
+      (outline (path signal 100  -1270 1270  -1270 -8890))
+      (outline (path signal 100  -1270 -8890  1270 -8890))
+      (outline (path signal 100  1270 -8890  1270 1270))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 120  -1330 -1270  -1330 -8950))
+      (outline (path signal 120  -1330 -8950  1330 -8950))
+      (outline (path signal 120  1330 -8950  1330 -1270))
+      (outline (path signal 120  1330 -1270  -1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -9400))
+      (outline (path signal 50  -1800 -9400  1800 -9400))
+      (outline (path signal 50  1800 -9400  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_2000x2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 0 -2540)
+      (pin Round[A]Pad_2000_um 3 0 -5080)
+      (pin Round[A]Pad_2000_um 4 0 -7620)
+    )
+    (image reciver:Socket_My_7_Pitch2.54mm
+      (outline (path signal 100  -1270 1270  -1270 -16510))
+      (outline (path signal 100  -1270 -16510  1270 -16510))
+      (outline (path signal 100  1270 -16510  1270 1270))
+      (outline (path signal 100  1270 1270  -1270 1270))
+      (outline (path signal 120  -1330 -1270  -1330 -16570))
+      (outline (path signal 120  -1330 -16570  1330 -16570))
+      (outline (path signal 120  1330 -16570  1330 -1270))
+      (outline (path signal 120  1330 -1270  -1330 -1270))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 50  -1800 1800  -1800 -17050))
+      (outline (path signal 50  -1800 -17050  1800 -17050))
+      (outline (path signal 50  1800 -17050  1800 1800))
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (pin Rect[A]Pad_2000x2000_um 1 0 0)
+      (pin Round[A]Pad_2000_um 2 0 -2540)
+      (pin Round[A]Pad_2000_um 3 0 -5080)
+      (pin Round[A]Pad_2000_um 4 0 -7620)
+      (pin Round[A]Pad_2000_um 5 0 -10160)
+      (pin Round[A]Pad_2000_um 6 0 -12700)
+      (pin Round[A]Pad_2000_um 7 0 -15240)
+    )
+    (padstack Round[A]Pad_2000_um
+      (shape (circle F.Cu 2000))
+      (shape (circle B.Cu 2000))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_2000x2000_um
+      (shape (rect F.Cu -1000 -1000 1000 1000))
+      (shape (rect B.Cu -1000 -1000 1000 1000))
+      (attach off)
+    )
+    (padstack "Via[0-1]_1600:800_um"
+      (shape (circle F.Cu 1600))
+      (shape (circle B.Cu 1600))
+      (attach off)
+    )
+  )
+  (network
+    (net "Net-(C1-Pad1)"
+      (pins U1-2 U1-1 R1-2 J1-7 C1-1)
+    )
+    (net GND
+      (pins U2-2 U1-4 U1-7 R5-2 J3-2 J2-4 J1-1 J1-3 J1-6 C3-2 C2-2 C1-2)
+    )
+    (net VCC
+      (pins U3-3 U2-1 J3-1 C2-1)
+    )
+    (net "Net-(C3-Pad1)"
+      (pins U2-3 J2-1 C3-1)
+    )
+    (net "Net-(J1-Pad2)"
+      (pins U3-2 U1-8 R2-1 R1-1 J1-2 J1-5)
+    )
+    (net "Net-(J1-Pad4)"
+      (pins U1-5 J1-4)
+    )
+    (net "Net-(J2-Pad2)"
+      (pins U1-3 J2-2)
+    )
+    (net "Net-(J2-Pad3)"
+      (pins J2-3)
+    )
+    (net "Net-(R2-Pad2)"
+      (pins U3-1 R3-1 R2-2)
+    )
+    (net "Net-(R3-Pad2)"
+      (pins R4-1 R3-2)
+    )
+    (net "Net-(R4-Pad2)"
+      (pins R5-1 R4-2)
+    )
+    (net "Net-(U1-Pad6)"
+      (pins U1-6)
+    )
+    (class kicad_default "" GND "Net-(C1-Pad1)" "Net-(C3-Pad1)" "Net-(J1-Pad2)"
+      "Net-(J1-Pad4)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(R2-Pad2)" "Net-(R3-Pad2)"
+      "Net-(R4-Pad2)" "Net-(U1-Pad6)" VCC
+      (circuit
+        (use_via Via[0-1]_1600:800_um)
+      )
+      (rule
+        (width 500)
+        (clearance 500.1)
+      )
+    )
+    (class 025
+      (circuit
+        (use_via Via[0-1]_1600:800_um)
+      )
+      (rule
+        (width 250)
+        (clearance 500.1)
+      )
+    )
+    (class 100
+      (circuit
+        (use_via Via[0-1]_1600:800_um)
+      )
+      (rule
+        (width 1000)
+        (clearance 500.1)
+      )
+    )
+    (class 150
+      (circuit
+        (use_via Via[0-1]_1600:800_um)
+      )
+      (rule
+        (width 1500)
+        (clearance 500.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
