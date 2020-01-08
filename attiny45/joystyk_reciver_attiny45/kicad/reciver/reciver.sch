@@ -379,14 +379,9 @@ Wire Wire Line
 Wire Wire Line
 	5300 4150 5300 5300
 Wire Wire Line
-	5300 5300 4850 5300
-Wire Wire Line
 	3150 5300 3150 5350
 Wire Wire Line
 	3150 5350 3000 5350
-Connection ~ 4850 5300
-Wire Wire Line
-	4850 5300 3150 5300
 Wire Wire Line
 	4200 5600 3550 5600
 Wire Wire Line
@@ -415,11 +410,6 @@ Wire Wire Line
 	4800 4050 5100 4050
 Wire Wire Line
 	5100 4050 5100 4750
-Wire Wire Line
-	5100 4750 4200 4750
-Connection ~ 4200 4750
-Wire Wire Line
-	4200 4750 3000 4750
 Wire Wire Line
 	5250 3850 5250 5150
 Wire Wire Line
@@ -479,4 +469,24 @@ Wire Wire Line
 	2100 3700 2100 3450
 Wire Wire Line
 	2400 3650 2400 3450
+Wire Wire Line
+	5100 4750 4550 4750
+Wire Wire Line
+	4550 4750 4550 4850
+Wire Wire Line
+	4550 4850 3700 4850
+Wire Wire Line
+	3700 4850 3700 4750
+Wire Wire Line
+	3700 4750 3000 4750
+Wire Wire Line
+	5300 5300 5200 5300
+Wire Wire Line
+	5200 5300 5200 5250
+Wire Wire Line
+	5200 5250 3850 5250
+Wire Wire Line
+	3850 5250 3850 5300
+Wire Wire Line
+	3850 5300 3150 5300
 $EndSCHEMATC

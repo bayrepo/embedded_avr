@@ -21,8 +21,8 @@
       )
     )
     (boundary
-      (path pcb 0  160046 -106740  101540 -106740  101540 -73600  160046 -73600
-            160046 -106740)
+      (path pcb 0  171763 -106740  101540 -106740  101540 -65282.5  171763 -65282.5
+            171763 -106740)
     )
     (via "Via[0-1]_1600:800_um")
     (rule
@@ -201,10 +201,10 @@
   )
   (network
     (net "Net-(C1-Pad1)"
-      (pins U1-2 U1-1 R1-2 J1-7 C1-1)
+      (pins U1-1 R1-2 C1-1)
     )
     (net GND
-      (pins U2-2 U1-4 U1-7 R5-2 J3-2 J2-4 J1-1 J1-3 J1-6 C3-2 C2-2 C1-2)
+      (pins U2-2 U1-4 R5-2 J3-2 J2-4 J1-3 J1-6 C3-2 C2-2 C1-2)
     )
     (net VCC
       (pins U3-3 U2-1 J3-1 C2-1)
@@ -236,9 +236,15 @@
     (net "Net-(U1-Pad6)"
       (pins U1-6)
     )
-    (class kicad_default "" GND "Net-(C1-Pad1)" "Net-(C3-Pad1)" "Net-(J1-Pad2)"
-      "Net-(J1-Pad4)" "Net-(J2-Pad2)" "Net-(J2-Pad3)" "Net-(R2-Pad2)" "Net-(R3-Pad2)"
-      "Net-(R4-Pad2)" "Net-(U1-Pad6)" VCC
+    (net "Net-(J1-Pad1)"
+      (pins U1-7 J1-1)
+    )
+    (net "Net-(J1-Pad7)"
+      (pins U1-2 J1-7)
+    )
+    (class kicad_default "" GND "Net-(C1-Pad1)" "Net-(C3-Pad1)" "Net-(J1-Pad1)"
+      "Net-(J1-Pad2)" "Net-(J1-Pad4)" "Net-(J1-Pad7)" "Net-(J2-Pad2)" "Net-(J2-Pad3)"
+      "Net-(R2-Pad2)" "Net-(R3-Pad2)" "Net-(R4-Pad2)" "Net-(U1-Pad6)" VCC
       (circuit
         (use_via Via[0-1]_1600:800_um)
       )
