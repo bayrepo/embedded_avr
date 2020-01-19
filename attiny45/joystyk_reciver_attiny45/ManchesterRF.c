@@ -47,7 +47,7 @@ static uint8_t directRxPort = 0x00;
 static uint8_t directRxMask = 0x00;
 static uint8_t rx_sample = 0;
 static uint8_t rx_last_sample = 0;
-static uint8_t rx_pulse_width = 0;
+static uint16_t rx_pulse_width = 0;
 static uint8_t rx_pulse_width_inc = 4;
 static uint8_t rx_sync_count = 0;
 static uint8_t rx_mode = RX_MODE_IDLE;
@@ -466,9 +466,9 @@ void MAN_RX_INTERRUPT_HANDLER() {
 					//PORTB |= (1<<PB1);
                     } else if ((!rx_last_sample) && ((rx_pulse_width < MinCount) || (rx_pulse_width > MaxLongCount))) {
                     rx_mode = RX_MODE_PRE;
+					//PORTB |= (1<<PB1);
                     } else {
                     rx_sync_count++;
-					//PORTB |= (1<<PB2);
                     if ((!rx_last_sample) && (rx_sync_count >= 20) && (rx_pulse_width >= MinLongCount)) {
                         rx_mode = RX_MODE_DATA;
                         rx_manBits = 0;
@@ -476,13 +476,15 @@ void MAN_RX_INTERRUPT_HANDLER() {
                         rx_curByte = 0;
                         } else if (rx_sync_count >= 64) {
                         rx_mode = RX_MODE_PRE;
+						//PORTB |= (1<<PB1);
                     }
                     rx_pulse_width = 0;
                 }
                 } else if (rx_mode == RX_MODE_DATA) {
-
+					//PORTB |= (1<<PB2);
                 if ((rx_pulse_width < MinCount) || (rx_pulse_width > MaxLongCount)) {
                     rx_mode = RX_MODE_PRE;
+					//PORTB |= (1<<PB1);
                     if (rx_curByte > 0) {
                         if (!MAN_IS_BUFF_FULL) man_rx_buff_end = (man_rx_buff_end+1) % MAN_BUF_SIZE;
                     }
@@ -492,6 +494,7 @@ void MAN_RX_INTERRUPT_HANDLER() {
                     }
                     if ((rx_sample) && (rx_curByte >= MAN_MESSAGE_SIZE)) {
                         rx_mode = RX_MODE_PRE;
+						//PORTB |= (1<<PB1);
                         if (!MAN_IS_BUFF_FULL) man_rx_buff_end = (man_rx_buff_end+1) % MAN_BUF_SIZE;
                         } else {
                         AddManBit(rx_sample);

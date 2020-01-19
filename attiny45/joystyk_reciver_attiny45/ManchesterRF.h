@@ -21,7 +21,7 @@
 //setup timing for receiver
 #define MinCount 52//pulse lower count limit on capture
 #define MaxCount 78//pulse higher count limit on capture
-#define MinLongCount 116//pulse lower count on double pulse
+#define MinLongCount 100//pulse lower count on double pulse
 #define MaxLongCount 152//pulse higher count on double pulse
 
 //setup timing for transmitter
