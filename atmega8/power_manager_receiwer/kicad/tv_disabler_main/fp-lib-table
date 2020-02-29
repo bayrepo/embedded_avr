@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name tv_disabler_main_lib)(type KiCad)(uri ${KIPRJMOD}/tv_disabler_main_lib.pretty)(options "")(descr ""))
+)

@@ -7,6 +7,8 @@
 * atmega8/monitor_i2c_uart - программа, по выводу информации с источников подключаемых по i2c и по UART для МК ATmega8
 * attiny13a/joystyk_transmitter_attiny13a - программа для опроса джойстика и посылки информации с джойстика по радиоканалу. На основе кода https://github.com/cano64/ManchesterRF
 * attiny45/joystyk_reciver_attiny45 - программа приема информации с джойстика и управление серводвигателями на сонове полученной ифнормации, на основе кода https://github.com/cano64/ManchesterRF
+* atmega8/power_manager_transmitter - программа и схема передатчика управления питанием для статьи ...
+* atmega8/power_manager_receiwer - программа и схема приемника управления питанием для статьи ...
 
 
 Более детальная информация по проектам на [сайте](http://putey.net/)

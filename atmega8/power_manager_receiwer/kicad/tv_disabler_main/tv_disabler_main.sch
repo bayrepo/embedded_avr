@@ -1,0 +1,897 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega8-16PU U3
+U 1 1 5E49A938
+P 4800 3200
+F 0 "U3" H 4800 4781 50  0000 C CNN
+F 1 "ATmega8-16PU" H 4800 4690 50  0000 C CNN
+F 2 "tv_disabler_main_lib:DIP-28_296_ELL" H 4800 3200 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2486-8-bit-avr-microcontroller-atmega8_l_datasheet.pdf" H 4800 3200 50  0001 C CNN
+	1    4800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L L1:Led_10 D1
+U 1 1 5E49CA80
+P 7400 3150
+F 0 "D1" H 7425 3565 50  0000 C CNN
+F 1 "Led_10" H 7425 3474 50  0000 C CNN
+F 2 "tv_disabler_main_lib:DIP-20_296_ELL" H 7400 3150 50  0001 C CNN
+F 3 "" H 7400 3150 50  0001 C CNN
+	1    7400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E49CFD9
+P 8200 3000
+F 0 "R8" V 7993 3000 50  0000 C CNN
+F 1 "470" V 8084 3000 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3000 50  0001 C CNN
+F 3 "~" H 8200 3000 50  0001 C CNN
+	1    8200 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5E49D74B
+P 8200 3100
+F 0 "R9" V 7993 3100 50  0000 C CNN
+F 1 "470" V 8084 3100 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3100 50  0001 C CNN
+F 3 "~" H 8200 3100 50  0001 C CNN
+	1    8200 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E49DA18
+P 8200 3200
+F 0 "R10" V 7993 3200 50  0000 C CNN
+F 1 "470" V 8084 3200 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3200 50  0001 C CNN
+F 3 "~" H 8200 3200 50  0001 C CNN
+	1    8200 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E49DB0A
+P 8200 3300
+F 0 "R11" V 7993 3300 50  0000 C CNN
+F 1 "470" V 8084 3300 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3300 50  0001 C CNN
+F 3 "~" H 8200 3300 50  0001 C CNN
+	1    8200 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5E49DC26
+P 8200 3400
+F 0 "R12" V 7993 3400 50  0000 C CNN
+F 1 "470" V 8084 3400 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3400 50  0001 C CNN
+F 3 "~" H 8200 3400 50  0001 C CNN
+	1    8200 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5E49DD5C
+P 8200 3500
+F 0 "R13" V 7993 3500 50  0000 C CNN
+F 1 "470" V 8084 3500 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3500 50  0001 C CNN
+F 3 "~" H 8200 3500 50  0001 C CNN
+	1    8200 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5E49DE5D
+P 8200 3600
+F 0 "R14" V 7993 3600 50  0000 C CNN
+F 1 "470" V 8084 3600 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3600 50  0001 C CNN
+F 3 "~" H 8200 3600 50  0001 C CNN
+	1    8200 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5E49DF8E
+P 8200 3700
+F 0 "R15" V 7993 3700 50  0000 C CNN
+F 1 "470" V 8084 3700 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3700 50  0001 C CNN
+F 3 "~" H 8200 3700 50  0001 C CNN
+	1    8200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5E49E0AF
+P 8200 3800
+F 0 "R16" V 7993 3800 50  0000 C CNN
+F 1 "470" V 8084 3800 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3800 50  0001 C CNN
+F 3 "~" H 8200 3800 50  0001 C CNN
+	1    8200 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5E49E19B
+P 8200 3900
+F 0 "R17" V 7993 3900 50  0000 C CNN
+F 1 "470" V 8084 3900 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 3900 50  0001 C CNN
+F 3 "~" H 8200 3900 50  0001 C CNN
+	1    8200 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 3000 8050 3000
+Wire Wire Line
+	7850 3100 8050 3100
+Wire Wire Line
+	7850 3200 8050 3200
+Wire Wire Line
+	7850 3300 8050 3300
+Wire Wire Line
+	7850 3400 8050 3400
+Wire Wire Line
+	7850 3500 8050 3500
+Wire Wire Line
+	7850 3600 8050 3600
+Wire Wire Line
+	7850 3700 8050 3700
+Wire Wire Line
+	7850 3800 8050 3800
+Wire Wire Line
+	7850 3900 8050 3900
+Wire Wire Line
+	8350 3000 8600 3000
+Wire Wire Line
+	8600 3000 8600 3100
+Wire Wire Line
+	8350 3100 8600 3100
+Connection ~ 8600 3100
+Wire Wire Line
+	8600 3100 8600 3200
+Wire Wire Line
+	8350 3200 8600 3200
+Connection ~ 8600 3200
+Wire Wire Line
+	8600 3200 8600 3300
+Wire Wire Line
+	8350 3300 8600 3300
+Connection ~ 8600 3300
+Wire Wire Line
+	8600 3300 8600 3400
+Wire Wire Line
+	8350 3400 8600 3400
+Connection ~ 8600 3400
+Wire Wire Line
+	8600 3400 8600 3500
+Wire Wire Line
+	8350 3500 8600 3500
+Connection ~ 8600 3500
+Wire Wire Line
+	8600 3500 8600 3600
+Wire Wire Line
+	8350 3600 8600 3600
+Connection ~ 8600 3600
+Wire Wire Line
+	8600 3600 8600 3700
+Wire Wire Line
+	8350 3700 8600 3700
+Connection ~ 8600 3700
+Wire Wire Line
+	8600 3700 8600 3800
+Wire Wire Line
+	8350 3800 8600 3800
+Connection ~ 8600 3800
+Wire Wire Line
+	8600 3800 8600 3900
+Wire Wire Line
+	8350 3900 8600 3900
+Connection ~ 8600 3900
+Wire Wire Line
+	8600 3900 8600 4200
+Wire Wire Line
+	4800 4600 4800 4850
+Wire Wire Line
+	4800 4850 4900 4850
+Wire Wire Line
+	8050 4850 8050 4200
+Wire Wire Line
+	8050 4200 8600 4200
+Wire Wire Line
+	4900 4600 4900 4850
+Connection ~ 4900 4850
+Wire Wire Line
+	4900 4850 5800 4850
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5E4A2611
+P 7600 1800
+F 0 "J2" H 7628 1776 50  0000 L CNN
+F 1 "Receiver" H 7628 1685 50  0000 L CNN
+F 2 "tv_disabler_main_lib:SIP-4" H 7600 1800 50  0001 C CNN
+F 3 "~" H 7600 1800 50  0001 C CNN
+	1    7600 1800
+	1    0    0    -1  
+$EndComp
+Text Notes 7300 1650 0    50   ~ 0
+VCC
+Text Notes 7300 1750 0    50   ~ 0
+Rx
+Text Notes 7300 1850 0    50   ~ 0
+Rx
+Text Notes 7300 2000 0    50   ~ 0
+GND
+Wire Wire Line
+	8600 3000 8600 2300
+Wire Wire Line
+	8600 2300 7200 2300
+Wire Wire Line
+	7200 2300 7200 2000
+Wire Wire Line
+	7200 2000 7400 2000
+Connection ~ 8600 3000
+Wire Wire Line
+	5750 3800 5750 1800
+Wire Wire Line
+	5750 1800 7150 1800
+Wire Wire Line
+	5400 3800 5750 3800
+Wire Wire Line
+	7400 1900 7150 1900
+Wire Wire Line
+	7150 1900 7150 1800
+Connection ~ 7150 1800
+Wire Wire Line
+	7150 1800 7400 1800
+Wire Wire Line
+	5400 2900 6700 2900
+Wire Wire Line
+	6700 2900 6700 3000
+Wire Wire Line
+	6700 3000 7000 3000
+Wire Wire Line
+	5400 2800 6650 2800
+Wire Wire Line
+	6650 2800 6650 3100
+Wire Wire Line
+	6650 3100 7000 3100
+Wire Wire Line
+	5400 2600 6600 2600
+Wire Wire Line
+	6600 2600 6600 3200
+Wire Wire Line
+	6600 3200 7000 3200
+Wire Wire Line
+	5400 2500 6550 2500
+Wire Wire Line
+	6550 2500 6550 3300
+Wire Wire Line
+	6550 3300 7000 3300
+Wire Wire Line
+	5400 2400 6500 2400
+Wire Wire Line
+	6500 2400 6500 3400
+Wire Wire Line
+	6500 3400 7000 3400
+Wire Wire Line
+	5400 2300 6450 2300
+Wire Wire Line
+	6450 2300 6450 3500
+Wire Wire Line
+	6450 3500 7000 3500
+Wire Wire Line
+	5400 2200 6400 2200
+Wire Wire Line
+	6400 2200 6400 3600
+Wire Wire Line
+	6400 3600 7000 3600
+Wire Wire Line
+	5400 2100 6350 2100
+Wire Wire Line
+	6350 2100 6350 3700
+Wire Wire Line
+	6350 3700 7000 3700
+Wire Wire Line
+	4200 2500 3400 2500
+Wire Wire Line
+	3400 2500 3400 4700
+Wire Wire Line
+	3400 4700 6350 4700
+Wire Wire Line
+	6350 4700 6350 3800
+Wire Wire Line
+	6350 3800 7000 3800
+Wire Wire Line
+	4200 2300 3350 2300
+Wire Wire Line
+	3350 2300 3350 4800
+Wire Wire Line
+	3350 4800 6450 4800
+Wire Wire Line
+	6450 4800 6450 3900
+Wire Wire Line
+	6450 3900 7000 3900
+$Comp
+L Regulator_Linear:LM317L_TO92 U1
+U 1 1 5E4B59BC
+P 1550 5600
+F 0 "U1" H 1550 5842 50  0000 C CNN
+F 1 "LM317L_TO92" H 1550 5751 50  0000 C CNN
+F 2 "tv_disabler_main_lib:TO-252-2" H 1550 5825 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 1550 5600 50  0001 C CNN
+	1    1550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM317L_TO92 U2
+U 1 1 5E4B700B
+P 3700 5650
+F 0 "U2" H 3700 5892 50  0000 C CNN
+F 1 "LM317L_TO92" H 3700 5801 50  0000 C CNN
+F 2 "tv_disabler_main_lib:TO-252-2" H 3700 5875 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 3700 5650 50  0001 C CNN
+	1    3700 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E4B7664
+P 2100 5950
+F 0 "R1" H 2170 5996 50  0000 L CNN
+F 1 "470" H 2170 5905 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2030 5950 50  0001 C CNN
+F 3 "~" H 2100 5950 50  0001 C CNN
+	1    2100 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E4B7C51
+P 2100 6700
+F 0 "R2" H 2170 6746 50  0000 L CNN
+F 1 "1500" H 2170 6655 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2030 6700 50  0001 C CNN
+F 3 "~" H 2100 6700 50  0001 C CNN
+	1    2100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E4B7D93
+P 4350 5950
+F 0 "R4" H 4420 5996 50  0000 L CNN
+F 1 "1000" H 4420 5905 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 5950 50  0001 C CNN
+F 3 "~" H 4350 5950 50  0001 C CNN
+	1    4350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E4B84D0
+P 4350 6700
+F 0 "R5" H 4420 6746 50  0000 L CNN
+F 1 "3300" H 4420 6655 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4280 6700 50  0001 C CNN
+F 3 "~" H 4350 6700 50  0001 C CNN
+	1    4350 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 5600 2100 5600
+Wire Wire Line
+	2100 5600 2100 5800
+Wire Wire Line
+	2100 6100 2100 6300
+Wire Wire Line
+	1550 5900 1550 6300
+Wire Wire Line
+	1550 6300 2100 6300
+Connection ~ 2100 6300
+Wire Wire Line
+	2100 6300 2100 6550
+Wire Wire Line
+	4000 5650 4350 5650
+Wire Wire Line
+	4350 5650 4350 5800
+Wire Wire Line
+	4350 6100 4350 6300
+Wire Wire Line
+	4350 6300 3700 6300
+Wire Wire Line
+	3700 6300 3700 5950
+Connection ~ 4350 6300
+Wire Wire Line
+	4350 6300 4350 6550
+Wire Wire Line
+	4350 6850 4350 7150
+Wire Wire Line
+	4350 7150 5800 7150
+Wire Wire Line
+	5800 7150 5800 4850
+Connection ~ 5800 4850
+Wire Wire Line
+	5800 4850 8050 4850
+Wire Wire Line
+	2100 6850 2100 7150
+Wire Wire Line
+	2100 7150 4350 7150
+Connection ~ 4350 7150
+Wire Wire Line
+	2500 4300 1150 4300
+Wire Wire Line
+	1150 4300 1150 5600
+Wire Wire Line
+	1150 5600 1250 5600
+Wire Wire Line
+	2500 1400 2500 2000
+Wire Wire Line
+	2500 4300 3050 4300
+Wire Wire Line
+	3050 4300 3050 5650
+Wire Wire Line
+	3050 5650 3400 5650
+Connection ~ 2500 4300
+Wire Wire Line
+	2150 1650 2150 2000
+Wire Wire Line
+	2150 3700 3950 3700
+Wire Wire Line
+	3950 3700 3950 4850
+Wire Wire Line
+	3950 4850 4800 4850
+Connection ~ 4800 4850
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5E4E04F1
+P 950 850
+F 0 "J1" V 1012 894 50  0000 L CNN
+F 1 "AC_Power1_IN" V 1103 894 50  0000 L CNN
+F 2 "tv_disabler_main_lib:2-AC" H 950 850 50  0001 C CNN
+F 3 "~" H 950 850 50  0001 C CNN
+	1    950  850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  1400 950  1150
+Wire Wire Line
+	850  1650 850  1050
+$Comp
+L power:VCC #PWR0103
+U 1 1 5E4EF461
+P 3350 800
+F 0 "#PWR0103" H 3350 650 50  0001 C CNN
+F 1 "VCC" H 3367 973 50  0000 C CNN
+F 2 "" H 3350 800 50  0001 C CNN
+F 3 "" H 3350 800 50  0001 C CNN
+	1    3350 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5E4EF71B
+P 3850 1150
+F 0 "#PWR0104" H 3850 900 50  0001 C CNN
+F 1 "GND" H 3855 977 50  0000 C CNN
+F 2 "" H 3850 1150 50  0001 C CNN
+F 3 "" H 3850 1150 50  0001 C CNN
+	1    3850 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E4EFDB9
+P 3850 800
+F 0 "#FLG0101" H 3850 875 50  0001 C CNN
+F 1 "PWR_FLAG" H 3850 973 50  0000 C CNN
+F 2 "" H 3850 800 50  0001 C CNN
+F 3 "~" H 3850 800 50  0001 C CNN
+	1    3850 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E4F02F5
+P 3350 1150
+F 0 "#FLG0102" H 3350 1225 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 1323 50  0000 C CNN
+F 2 "" H 3350 1150 50  0001 C CNN
+F 3 "~" H 3350 1150 50  0001 C CNN
+	1    3350 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3350 1150 3350 800 
+Wire Wire Line
+	3850 1150 3850 800 
+$Comp
+L Relay_SolidState:MOC3063M U4
+U 1 1 5E4FA488
+P 9150 1050
+F 0 "U4" H 9150 1375 50  0000 C CNN
+F 1 "MOC3063M" H 9150 1284 50  0000 C CNN
+F 2 "tv_disabler_main_lib:DIP-6_296_ELL" H 8950 850 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/MO/MOC3061M.pdf" H 9150 1050 50  0001 L CNN
+	1    9150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E4FC11C
+P 8000 1200
+F 0 "R6" H 8070 1246 50  0000 L CNN
+F 1 "3300" H 8070 1155 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7930 1200 50  0001 C CNN
+F 3 "~" H 8000 1200 50  0001 C CNN
+	1    8000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E4FCCA0
+P 8200 950
+F 0 "R7" V 7993 950 50  0000 C CNN
+F 1 "220" V 8084 950 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8130 950 50  0001 C CNN
+F 3 "~" H 8200 950 50  0001 C CNN
+	1    8200 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5E4FD523
+P 8600 950
+F 0 "R18" V 8393 950 50  0000 C CNN
+F 1 "180" V 8484 950 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8530 950 50  0001 C CNN
+F 3 "~" H 8600 950 50  0001 C CNN
+	1    8600 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 1050 8000 950 
+Wire Wire Line
+	8000 950  8050 950 
+Wire Wire Line
+	8350 950  8450 950 
+Wire Wire Line
+	8750 950  8850 950 
+Wire Wire Line
+	8850 1150 8600 1150
+Wire Wire Line
+	8600 1150 8600 1600
+Connection ~ 8600 2300
+Wire Wire Line
+	8000 1350 8000 1600
+Wire Wire Line
+	8000 1600 8600 1600
+Connection ~ 8600 1600
+Wire Wire Line
+	8600 1600 8600 2300
+Wire Wire Line
+	5400 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 950 
+Wire Wire Line
+	6100 950  8000 950 
+Connection ~ 8000 950 
+$Comp
+L Triac_Thyristor:BT139-600 Q1
+U 1 1 5E523BFC
+P 10200 1350
+F 0 "Q1" H 10328 1396 50  0000 L CNN
+F 1 "BT139-600" H 10328 1305 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 10400 1275 50  0001 L CIN
+F 3 "https://www.rapidonline.com/pdf/47-3240.pdf" H 10200 1350 50  0001 L CNN
+	1    10200 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R20
+U 1 1 5E524B16
+P 9750 950
+F 0 "R20" V 9543 950 50  0000 C CNN
+F 1 "330" V 9634 950 50  0000 C CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9680 950 50  0001 C CNN
+F 3 "~" H 9750 950 50  0001 C CNN
+	1    9750 950 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 950  9600 950 
+Wire Wire Line
+	9450 1150 9800 1150
+Wire Wire Line
+	9800 1150 9800 1450
+Wire Wire Line
+	9800 1450 10050 1450
+$Comp
+L Device:R R21
+U 1 1 5E5370D5
+P 10700 1650
+F 0 "R21" H 10770 1696 50  0000 L CNN
+F 1 "330" H 10770 1605 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10630 1650 50  0001 C CNN
+F 3 "~" H 10700 1650 50  0001 C CNN
+	1    10700 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 1900 10700 1800
+Wire Wire Line
+	10700 1500 10200 1500
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5E543C63
+P 10500 2500
+F 0 "J3" H 10472 2382 50  0000 R CNN
+F 1 "AC_Power_Out" H 10472 2473 50  0000 R CNN
+F 2 "tv_disabler_main_lib:2-AC" H 10500 2500 50  0001 C CNN
+F 3 "~" H 10500 2500 50  0001 C CNN
+	1    10500 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	950  1150 1450 1150
+Wire Wire Line
+	1450 1150 1450 500 
+Wire Wire Line
+	1450 500  11200 500 
+Connection ~ 950  1150
+Wire Wire Line
+	950  1150 950  1050
+Wire Wire Line
+	850  1650 850  3850
+Wire Wire Line
+	850  3850 2900 3850
+Wire Wire Line
+	2900 3850 2900 4950
+Wire Wire Line
+	2900 4950 10000 4950
+Connection ~ 850  1650
+$Comp
+L Device:R R19
+U 1 1 5E55BE6F
+P 9350 1650
+F 0 "R19" H 9420 1696 50  0000 L CNN
+F 1 "47" H 9420 1605 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_Power_L50.0mm_W9.0mm_P55.88mm" V 9280 1650 50  0001 C CNN
+F 3 "~" H 9350 1650 50  0001 C CNN
+	1    9350 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E55C37F
+P 9350 2300
+F 0 "C3" H 9465 2346 50  0000 L CNN
+F 1 "10n" H 9465 2255 50  0000 L CNN
+F 2 "tv_disabler_main_lib:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal" H 9388 2150 50  0001 C CNN
+F 3 "~" H 9350 2300 50  0001 C CNN
+	1    9350 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1800 9350 2150
+Wire Wire Line
+	9350 1300 9350 1500
+Wire Wire Line
+	9350 2450 9750 2450
+$Comp
+L Device:R R3
+U 1 1 5E574356
+P 3500 1700
+F 0 "R3" H 3570 1746 50  0000 L CNN
+F 1 "10000" H 3570 1655 50  0000 L CNN
+F 2 "tv_disabler_main_lib:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3430 1700 50  0001 C CNN
+F 3 "~" H 3500 1700 50  0001 C CNN
+	1    3500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E574A66
+P 2950 2200
+F 0 "C2" H 3065 2246 50  0000 L CNN
+F 1 "100nF" H 3065 2155 50  0000 L CNN
+F 2 "tv_disabler_main_lib:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 2988 2050 50  0001 C CNN
+F 3 "~" H 2950 2200 50  0001 C CNN
+	1    2950 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5E57546D
+P 2350 2000
+F 0 "C1" V 2095 2000 50  0000 C CNN
+F 1 "220uF" V 2186 2000 50  0000 C CNN
+F 2 "tv_disabler_main_lib:CP_Radial_Tantal_D5.0mm_P5.00mm" H 2388 1850 50  0001 C CNN
+F 3 "~" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	0    1    1    0   
+$EndComp
+Connection ~ 2500 2000
+Wire Wire Line
+	2200 2000 2150 2000
+Connection ~ 2150 2000
+Wire Wire Line
+	2150 2000 2150 2350
+Wire Wire Line
+	3500 1850 3350 1850
+Wire Wire Line
+	2950 1850 2950 2050
+Wire Wire Line
+	4200 2100 3350 2100
+Wire Wire Line
+	3350 2100 3350 1850
+Connection ~ 3350 1850
+Wire Wire Line
+	3350 1850 2950 1850
+Wire Wire Line
+	2950 2350 2150 2350
+Connection ~ 2150 2350
+Wire Wire Line
+	2150 2350 2150 3700
+NoConn ~ 4200 2700
+NoConn ~ 4900 1800
+NoConn ~ 5400 3000
+NoConn ~ 5400 3100
+NoConn ~ 5400 3200
+NoConn ~ 5400 3300
+NoConn ~ 5400 3500
+NoConn ~ 5400 3600
+NoConn ~ 5400 3700
+NoConn ~ 5400 4000
+NoConn ~ 5400 4100
+NoConn ~ 5400 4200
+Wire Wire Line
+	2500 2000 2500 4300
+Wire Wire Line
+	2100 5600 2650 5600
+Wire Wire Line
+	2650 5600 2650 1550
+Wire Wire Line
+	2650 1550 3500 1550
+Connection ~ 2100 5600
+Wire Wire Line
+	3500 1550 4550 1550
+Wire Wire Line
+	4550 1550 4550 1450
+Wire Wire Line
+	4550 1450 4800 1450
+Wire Wire Line
+	4800 1450 4800 1800
+Connection ~ 3500 1550
+Wire Wire Line
+	4350 5650 6900 5650
+Wire Wire Line
+	6900 5650 6900 1700
+Wire Wire Line
+	6900 1700 7400 1700
+Connection ~ 4350 5650
+$Comp
+L Converter_ACDC:HLK-PM01 PS1
+U 1 1 5E64E703
+P 1650 1550
+F 0 "PS1" H 1650 1875 50  0000 C CNN
+F 1 "HLK-PM01" H 1650 1784 50  0000 C CNN
+F 2 "Converters_DCDC_ACDC:ACDC-Conv_THTMeanWell-IRM-02-XX" H 1650 1250 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=54" H 2050 1200 50  0001 C CNN
+	1    1650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1400 1250 1450
+Wire Wire Line
+	950  1400 1150 1400
+Wire Wire Line
+	850  1650 1150 1650
+Wire Wire Line
+	2050 1450 2050 1400
+Wire Wire Line
+	2050 1650 2150 1650
+Wire Wire Line
+	2050 1400 2500 1400
+$Comp
+L power:VCC #PWR0102
+U 1 1 5E67C0EA
+P 1150 1300
+F 0 "#PWR0102" H 1150 1150 50  0001 C CNN
+F 1 "VCC" H 1167 1473 50  0000 C CNN
+F 2 "" H 1150 1300 50  0001 C CNN
+F 3 "" H 1150 1300 50  0001 C CNN
+	1    1150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1300 1150 1400
+Connection ~ 1150 1400
+Wire Wire Line
+	1150 1400 1250 1400
+$Comp
+L power:GND #PWR0101
+U 1 1 5E687984
+P 1150 1800
+F 0 "#PWR0101" H 1150 1550 50  0001 C CNN
+F 1 "GND" H 1155 1627 50  0000 C CNN
+F 2 "" H 1150 1800 50  0001 C CNN
+F 3 "" H 1150 1800 50  0001 C CNN
+	1    1150 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 1800 1150 1650
+Connection ~ 1150 1650
+Wire Wire Line
+	1150 1650 1250 1650
+Wire Wire Line
+	10300 2400 10000 2400
+Wire Wire Line
+	10000 2400 10000 4950
+Wire Wire Line
+	11200 2100 10200 2100
+Wire Wire Line
+	10200 2100 10200 1700
+Wire Wire Line
+	11200 500  11200 2100
+Connection ~ 10200 1500
+Wire Wire Line
+	10200 1200 10200 1100
+Wire Wire Line
+	10200 650  9950 650 
+Wire Wire Line
+	9950 650  9950 2500
+Wire Wire Line
+	9950 2500 10300 2500
+Wire Wire Line
+	9750 1700 10200 1700
+Wire Wire Line
+	9750 1700 9750 2450
+Connection ~ 10200 1700
+Wire Wire Line
+	10200 1700 10200 1500
+Wire Wire Line
+	9350 1300 9700 1300
+Wire Wire Line
+	9700 1300 9700 1100
+Wire Wire Line
+	9700 1100 10200 1100
+Connection ~ 10200 1100
+Wire Wire Line
+	10200 1100 10200 950 
+Wire Wire Line
+	9900 950  10200 950 
+Connection ~ 10200 950 
+Wire Wire Line
+	10200 950  10200 650 
+Wire Wire Line
+	10700 1900 9800 1900
+Wire Wire Line
+	9800 1900 9800 1450
+Connection ~ 9800 1450
+$EndSCHEMATC
