@@ -2,7 +2,7 @@
 * stepper_first_experiment.c
 *
 * Created: 01.06.2020 22:48:19
-* Author : bayrepo.info@gmail.com
+* Author : bayre
 */
 
 #define F_CPU 8000000UL
@@ -23,8 +23,8 @@
 
 #define _BV(bit) (1 << (bit))
 
-#define MAX_STEPS 4 //8
-uint8_t states[MAX_STEPS] = {9, 12, 6, 3}; //{ 8, 12, 4, 6, 2, 3, 1, 9 }; //1000, 1100, 0100, 0110, 0010, 0011, 0001, 1001
+#define MAX_STEPS 8 //4
+uint8_t states[MAX_STEPS] = { 8, 12, 4, 6, 2, 3, 1, 9 }; //1000, 1100, 0100, 0110, 0010, 0011, 0001, 1001 //{9, 12, 6, 3};
 uint8_t direction = 0;
 
 #define BUTTON_STOP_MOTOR PD2
@@ -70,7 +70,7 @@ ISR(INT1_vect){
 
 ISR (ADC_vect){
     potentiometer = ADCW;
-    ADCSR |= (1<<ADSC);
+    ADCSRA |= (1<<ADSC);
 }
 
 #define MIN_R_100 1
@@ -81,7 +81,7 @@ ISR (ADC_vect){
 
 #define N_speed 8
 
-int speeds_array[N_speed+1] = { -1, 500, 480, 430, 400, 380, 330, 300, 250};
+int speeds_array[N_speed+1] = { -1, 950, 850, 750, 650, 550, 450, 350, 250}; //{ -1, 500, 480, 430, 400, 380, 330, 300, 250};
 
 #define Stop_center (MIN_POT + (MAX_POT - MIN_POT)/2)
 #define Stop_min (Stop_center - Stop_center / 5)
