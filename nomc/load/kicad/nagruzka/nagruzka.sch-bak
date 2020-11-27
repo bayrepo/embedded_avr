@@ -1,0 +1,580 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Электронная нагрузка"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_BJT:BC547 Q2
+U 1 1 5FB25302
+P 6650 2100
+F 0 "Q2" H 6841 2146 50  0000 L CNN
+F 1 "BC547" H 6841 2055 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Wide" H 6850 2025 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6650 2100 50  0001 L CNN
+	1    6650 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FB268A9
+P 7750 1800
+F 0 "R6" H 7820 1846 50  0000 L CNN
+F 1 "470" H 7820 1755 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 7680 1800 50  0001 C CNN
+F 3 "~" H 7750 1800 50  0001 C CNN
+	1    7750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FB2703F
+P 7250 2100
+F 0 "R5" V 7043 2100 50  0000 C CNN
+F 1 "47" V 7134 2100 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 7180 2100 50  0001 C CNN
+F 3 "~" H 7250 2100 50  0001 C CNN
+	1    7250 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N47xxA D1
+U 1 1 5FB27656
+P 7750 2400
+F 0 "D1" V 7704 2480 50  0000 L CNN
+F 1 "1N47xxA" V 7795 2480 50  0000 L CNN
+F 2 "Diodes_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 7750 2225 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85816/1n4728a.pdf" H 7750 2400 50  0001 C CNN
+	1    7750 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5FB280BF
+P 7750 2850
+F 0 "#PWR07" H 7750 2600 50  0001 C CNN
+F 1 "GND" H 7755 2677 50  0000 C CNN
+F 2 "" H 7750 2850 50  0001 C CNN
+F 3 "" H 7750 2850 50  0001 C CNN
+	1    7750 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FB2856D
+P 6550 3000
+F 0 "C4" H 6665 3046 50  0000 L CNN
+F 1 "4.7uF" H 6665 2955 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 6588 2850 50  0001 C CNN
+F 3 "~" H 6550 3000 50  0001 C CNN
+	1    6550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FB28B2B
+P 6550 3450
+F 0 "#PWR03" H 6550 3200 50  0001 C CNN
+F 1 "GND" H 6555 3277 50  0000 C CNN
+F 2 "" H 6550 3450 50  0001 C CNN
+F 3 "" H 6550 3450 50  0001 C CNN
+	1    6550 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5FB294A8
+P 5500 2550
+F 0 "RV2" V 5385 2550 50  0000 C CNN
+F 1 "500K" V 5294 2550 50  0000 C CNN
+F 2 "transmitter:Socket_3_My" H 5500 2550 50  0001 C CNN
+F 3 "~" H 5500 2550 50  0001 C CNN
+	1    5500 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5FB2A310
+P 4350 2250
+F 0 "R2" V 4143 2250 50  0000 C CNN
+F 1 "10K" V 4234 2250 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 4280 2250 50  0001 C CNN
+F 3 "~" H 4350 2250 50  0001 C CNN
+	1    4350 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FB2A940
+P 3450 2250
+F 0 "C1" V 3198 2250 50  0000 C CNN
+F 1 "4.7uF" V 3289 2250 50  0000 C CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 3488 2100 50  0001 C CNN
+F 3 "~" H 3450 2250 50  0001 C CNN
+	1    3450 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5FB2AF36
+P 2900 2450
+F 0 "#PWR01" H 2900 2200 50  0001 C CNN
+F 1 "GND" H 2905 2277 50  0000 C CNN
+F 2 "" H 2900 2450 50  0001 C CNN
+F 3 "" H 2900 2450 50  0001 C CNN
+	1    2900 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP603-xP U1
+U 1 1 5FB2B835
+P 5100 3600
+F 0 "U1" H 5444 3646 50  0000 L CNN
+F 1 "MCP603-xP" H 5444 3555 50  0000 L CNN
+F 2 "transmitter:DIP-8_296" H 5100 3600 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 5250 3750 50  0001 C CNN
+	1    5100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FB2C107
+P 3800 2950
+F 0 "R1" H 3870 2996 50  0000 L CNN
+F 1 "100" H 3870 2905 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 3730 2950 50  0001 C CNN
+F 3 "~" H 3800 2950 50  0001 C CNN
+	1    3800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5FB2C8A4
+P 3800 4150
+F 0 "RV1" H 3731 4196 50  0000 R CNN
+F 1 "10K" H 3731 4105 50  0000 R CNN
+F 2 "transmitter:Socket_3_My" H 3800 4150 50  0001 C CNN
+F 3 "~" H 3800 4150 50  0001 C CNN
+	1    3800 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5FB2D079
+P 3800 4750
+F 0 "#PWR02" H 3800 4500 50  0001 C CNN
+F 1 "GND" H 3805 4577 50  0000 C CNN
+F 2 "" H 3800 4750 50  0001 C CNN
+F 3 "" H 3800 4750 50  0001 C CNN
+	1    3800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FB2D545
+P 5250 4450
+F 0 "R3" V 5043 4450 50  0000 C CNN
+F 1 "10K" V 5134 4450 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P5.08mm_Vertical" V 5180 4450 50  0001 C CNN
+F 3 "~" H 5250 4450 50  0001 C CNN
+	1    5250 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J4
+U 1 1 5FB38FCF
+P 8600 1750
+F 0 "J4" H 8572 1632 50  0000 R CNN
+F 1 "9V_Power" H 8572 1723 50  0000 R CNN
+F 2 "transmitter:Socket_2_My" H 8600 1750 50  0001 C CNN
+F 3 "~" H 8600 1750 50  0001 C CNN
+	1    8600 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5FB399C9
+P 6350 5700
+F 0 "J2" H 6322 5582 50  0000 R CNN
+F 1 "Tester" H 6322 5673 50  0000 R CNN
+F 2 "nagruzka:R_my_5_08" H 6350 5700 50  0001 C CNN
+F 3 "~" H 6350 5700 50  0001 C CNN
+	1    6350 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5FB3A354
+P 5550 5200
+F 0 "R4" V 5343 5200 50  0000 C CNN
+F 1 "0.1" V 5434 5200 50  0000 C CNN
+F 2 "nagruzka:R_Axial_Big" V 5480 5200 50  0001 C CNN
+F 3 "~" H 5550 5200 50  0001 C CNN
+	1    5550 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C3
+U 1 1 5FB3AB26
+P 5000 5800
+F 0 "C3" V 5255 5800 50  0000 C CNN
+F 1 "10uF" V 5164 5800 50  0000 C CNN
+F 2 "transmitter:CP_My" H 5038 5650 50  0001 C CNN
+F 3 "~" H 5000 5800 50  0001 C CNN
+	1    5000 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5FB3B08A
+P 6350 4800
+F 0 "J1" H 6322 4682 50  0000 R CNN
+F 1 "Multimeter" H 6322 4773 50  0000 R CNN
+F 2 "transmitter:Socket_2_My" H 6350 4800 50  0001 C CNN
+F 3 "~" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5FB3B97D
+P 4350 4650
+F 0 "C2" H 4465 4696 50  0000 L CNN
+F 1 "100nF" H 4465 4605 50  0000 L CNN
+F 2 "Capacitors_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 4388 4500 50  0001 C CNN
+F 3 "~" H 4350 4650 50  0001 C CNN
+	1    4350 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5FB3C0BF
+P 6700 5300
+F 0 "#PWR04" H 6700 5050 50  0001 C CNN
+F 1 "GND" H 6705 5127 50  0000 C CNN
+F 2 "" H 6700 5300 50  0001 C CNN
+F 3 "" H 6700 5300 50  0001 C CNN
+	1    6700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR08
+U 1 1 5FB3C509
+P 8150 1350
+F 0 "#PWR08" H 8150 1200 50  0001 C CNN
+F 1 "VCC" H 8165 1523 50  0000 C CNN
+F 2 "" H 8150 1350 50  0001 C CNN
+F 3 "" H 8150 1350 50  0001 C CNN
+	1    8150 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1650 8150 1650
+Wire Wire Line
+	7750 1650 6550 1650
+Wire Wire Line
+	6550 1650 6550 1900
+Connection ~ 7750 1650
+Wire Wire Line
+	7750 1950 7750 2100
+Wire Wire Line
+	7750 2550 7750 2700
+Wire Wire Line
+	7750 2100 7400 2100
+Connection ~ 7750 2100
+Wire Wire Line
+	7750 2100 7750 2250
+Wire Wire Line
+	7100 2100 6850 2100
+Wire Wire Line
+	8400 1750 8400 2700
+Wire Wire Line
+	8400 2700 7750 2700
+Connection ~ 7750 2700
+Wire Wire Line
+	7750 2700 7750 2850
+Wire Wire Line
+	6550 2300 6550 2550
+Wire Wire Line
+	6550 3150 6550 3450
+Wire Wire Line
+	6550 2550 6050 2550
+Connection ~ 6550 2550
+Wire Wire Line
+	6550 2550 6550 2850
+NoConn ~ 5350 2550
+Wire Wire Line
+	5500 2400 5500 2250
+Wire Wire Line
+	5500 2250 4500 2250
+Wire Wire Line
+	4200 2250 3800 2250
+Wire Wire Line
+	3800 2800 3800 2650
+Connection ~ 3800 2250
+Wire Wire Line
+	3800 2250 3600 2250
+Wire Wire Line
+	3800 3100 3800 4000
+Wire Wire Line
+	3950 4150 3950 4600
+Wire Wire Line
+	3950 4600 3800 4600
+Wire Wire Line
+	3800 4600 3800 4750
+NoConn ~ 3800 4300
+Wire Wire Line
+	4800 3500 4450 3500
+Wire Wire Line
+	4450 3500 4450 2650
+Wire Wire Line
+	4450 2650 3800 2650
+Connection ~ 3800 2650
+Wire Wire Line
+	3800 2650 3800 2250
+Wire Wire Line
+	2900 2450 2900 2250
+Wire Wire Line
+	2900 2250 3300 2250
+Wire Wire Line
+	5000 3300 5000 2900
+Wire Wire Line
+	5000 2900 6050 2900
+Wire Wire Line
+	6050 2900 6050 2550
+Connection ~ 6050 2550
+Wire Wire Line
+	6050 2550 5650 2550
+Wire Wire Line
+	5000 3900 5000 4150
+Wire Wire Line
+	5000 4150 4100 4150
+Wire Wire Line
+	4100 4150 4100 4600
+Wire Wire Line
+	4100 4600 3950 4600
+Connection ~ 3950 4600
+Wire Wire Line
+	5100 3900 5100 4150
+Wire Wire Line
+	5100 4150 5000 4150
+Connection ~ 5000 4150
+Wire Wire Line
+	5400 3600 5700 3600
+Wire Wire Line
+	5700 3600 5700 4450
+Wire Wire Line
+	5700 4450 5400 4450
+Wire Wire Line
+	5100 4450 4850 4450
+Wire Wire Line
+	4850 4450 4850 4900
+$Comp
+L Transistor_FET:IRLB8721PBF Q1
+U 1 1 5FB45B04
+P 4850 5100
+F 0 "Q1" V 5099 5100 50  0000 C CNN
+F 1 "IRLB8721PBF" V 5190 5100 50  0000 C CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5100 5025 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irlb8721pbf.pdf?fileId=5546d462533600a40153566056732591" H 4850 5100 50  0001 L CNN
+	1    4850 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 5200 5200 5200
+Wire Wire Line
+	5700 5200 5750 5200
+Wire Wire Line
+	6150 5200 6150 5400
+Wire Wire Line
+	4650 5200 4200 5200
+Wire Wire Line
+	4200 5200 4200 5800
+Wire Wire Line
+	4200 6150 5600 6150
+Wire Wire Line
+	5600 6150 5600 5950
+Wire Wire Line
+	5600 5700 6150 5700
+Wire Wire Line
+	6700 5300 6700 5200
+Wire Wire Line
+	6700 5200 6150 5200
+Connection ~ 6150 5200
+Wire Wire Line
+	5150 5800 5400 5800
+Wire Wire Line
+	5400 5800 5400 5400
+Wire Wire Line
+	5400 5400 6150 5400
+Connection ~ 6150 5400
+Wire Wire Line
+	6150 5400 6150 5600
+Wire Wire Line
+	4850 5800 4200 5800
+Connection ~ 4200 5800
+Wire Wire Line
+	4200 5800 4200 6150
+Wire Wire Line
+	5200 5200 5200 4800
+Wire Wire Line
+	5200 4700 4650 4700
+Wire Wire Line
+	4650 4700 4650 3700
+Wire Wire Line
+	4650 3700 4800 3700
+Connection ~ 5200 5200
+Wire Wire Line
+	5200 5200 5350 5200
+Wire Wire Line
+	4850 4450 4350 4450
+Wire Wire Line
+	4350 4450 4350 4500
+Connection ~ 4850 4450
+Wire Wire Line
+	4350 4800 5200 4800
+Connection ~ 5200 4800
+Wire Wire Line
+	5200 4800 5200 4700
+Wire Wire Line
+	6150 4700 5350 4700
+Wire Wire Line
+	5350 4700 5350 5200
+Connection ~ 5350 5200
+Wire Wire Line
+	5350 5200 5400 5200
+Wire Wire Line
+	6150 4800 5750 4800
+Wire Wire Line
+	5750 4800 5750 5200
+Connection ~ 5750 5200
+Wire Wire Line
+	5750 5200 6000 5200
+Wire Wire Line
+	8150 1350 8150 1650
+Connection ~ 8150 1650
+Wire Wire Line
+	8150 1650 7750 1650
+$Comp
+L power:GND #PWR05
+U 1 1 5FB59EA8
+P 7300 4250
+F 0 "#PWR05" H 7300 4000 50  0001 C CNN
+F 1 "GND" H 7305 4077 50  0000 C CNN
+F 2 "" H 7300 4250 50  0001 C CNN
+F 3 "" H 7300 4250 50  0001 C CNN
+	1    7300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5FB5A51C
+P 7700 3850
+F 0 "#PWR06" H 7700 3700 50  0001 C CNN
+F 1 "VCC" H 7715 4023 50  0000 C CNN
+F 2 "" H 7700 3850 50  0001 C CNN
+F 3 "" H 7700 3850 50  0001 C CNN
+	1    7700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FB5AD8A
+P 7300 3900
+F 0 "#FLG01" H 7300 3975 50  0001 C CNN
+F 1 "PWR_FLAG" H 7300 4073 50  0000 C CNN
+F 2 "" H 7300 3900 50  0001 C CNN
+F 3 "~" H 7300 3900 50  0001 C CNN
+	1    7300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5FB5B2BB
+P 7700 4250
+F 0 "#FLG02" H 7700 4325 50  0001 C CNN
+F 1 "PWR_FLAG" H 7700 4423 50  0000 C CNN
+F 2 "" H 7700 4250 50  0001 C CNN
+F 3 "~" H 7700 4250 50  0001 C CNN
+	1    7700 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 4250 7700 3850
+Wire Wire Line
+	7300 3900 7300 4250
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5FB5F6F0
+P 6400 5950
+F 0 "J3" H 6372 5832 50  0000 R CNN
+F 1 "Multimeter_Voltage" H 6372 5923 50  0000 R CNN
+F 2 "transmitter:Socket_2_My" H 6400 5950 50  0001 C CNN
+F 3 "~" H 6400 5950 50  0001 C CNN
+	1    6400 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 5200 6000 5850
+Wire Wire Line
+	6000 5850 6200 5850
+Connection ~ 6000 5200
+Wire Wire Line
+	6000 5200 6150 5200
+Wire Wire Line
+	6200 5950 5600 5950
+Connection ~ 5600 5950
+Wire Wire Line
+	5600 5950 5600 5700
+$Comp
+L power:VDD #PWR09
+U 1 1 5FB6648B
+P 5000 2750
+F 0 "#PWR09" H 5000 2600 50  0001 C CNN
+F 1 "VDD" H 5015 2923 50  0000 C CNN
+F 2 "" H 5000 2750 50  0001 C CNN
+F 3 "" H 5000 2750 50  0001 C CNN
+	1    5000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2900 5000 2750
+Connection ~ 5000 2900
+$Comp
+L power:VDD #PWR010
+U 1 1 5FB68F75
+P 8050 3850
+F 0 "#PWR010" H 8050 3700 50  0001 C CNN
+F 1 "VDD" H 8065 4023 50  0000 C CNN
+F 2 "" H 8050 3850 50  0001 C CNN
+F 3 "" H 8050 3850 50  0001 C CNN
+	1    8050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5FB6975B
+P 8100 4250
+F 0 "#FLG03" H 8100 4325 50  0001 C CNN
+F 1 "PWR_FLAG" H 8100 4423 50  0000 C CNN
+F 2 "" H 8100 4250 50  0001 C CNN
+F 3 "~" H 8100 4250 50  0001 C CNN
+	1    8100 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 4250 8100 4050
+Wire Wire Line
+	8100 4050 8050 4000
+Wire Wire Line
+	8050 4000 8050 3850
+$EndSCHEMATC
