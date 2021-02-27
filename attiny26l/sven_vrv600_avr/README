@@ -1,0 +1,149 @@
+В составе проекта:
+main.c - исходный код программы, для МК attiny26L
+stimuli_converter - в папке расположен питон скрипт, для преобразования csv файла, полученного на логическом аанализаторе LA1010
+для запуска конвертера используется команда:
+python3 conver2.py 8000000 2021-02-03_00-59-54_0_scl_1_sda.csv test.stim 10
+где python3 conver2.py [частота в герцах] [файл csv] [выходной стимули файл] [число холостых тактов, когда начальные значения не менялись]
+
+Пример csv файла:
+Time[s],  PINB 2,  PINB 0, PINA 7
+-0.012501375, 0, 1, 0
+0.000000000, 1, 1, 0
+0.000010250, 1, 0, 0
+0.000020125, 0, 0, 0
+0.000021000, 0, 1, 0
+0.000028625, 0, 0, 0
+0.000037875, 1, 0, 0
+0.000047375, 0, 0, 1
+0.000057250, 1, 0, 0
+0.000066625, 0, 0, 0
+Файл полученный от экспорта LA1010, в первой строке должен быть дополнен номерами пинов МК, на которые сигнал будет подан
+т.е PINB 2 - это PINB МК его третий бит, PINB 0 - первый бит и т.д. Пины могут быть разные.
+
+Пример запуска:
+$ python3 conver2.py 8000000 test1.csv test1_out.stim 10
+F_CPU 8000000 from file test1.csv
+1 cyckle size 0.000000125000
+
+tests - папка с тестами и моделированием:
+
+1 - моделирование функции getWaveMax, вычисление максимального значения на положительной полуволне:
+$ ./sven600
+Test 1. One wave 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 300=T(340) 100=T(U) 40=T(U) 20=T(U) 0=T(U) 0=T(U) 
+Test 2. One distorted wave 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 320=T(U) 330=T(U) 320=T(U) 310=T(U) 100=T(340) 0=T(U) 
+Test 3. One dist wave second huge 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 320=T(U) 330=T(U) 340=T(U) 350=T(U) 320=T(U) 310=T(U) 100=T(350) 0=T(U) 
+Test 4. Two waves 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 290=T(340) 330=T(U) 330=T(U) 325=T(U) 320=T(U) 310=T(U) 100=T(330) 0=T(U) 
+Test 5 340 == 340. One wave
+Test 6 340 == 340. One distorted wave
+Test 7 350 == 350. One dist wave second huge
+Test 8 330 == 330. Two waves, check both
+Test 9 340 == 340. Two waves, check only first
+Test 10. A lot of small waves 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 
+Test 11. A lot of small waves 2 100=T(U) 350=T(U) 350=T(U) 100=T(350) 350=T(U) 350=T(U) 100=T(350) 350=T(U) 350=T(U) 100=T(350) 350=T(U) 350=T(U) 100=T(350)
+
+2 - моделирование перехода между состояниями getLimit, при различных значениях на LineIn:
+$ ./sven600_2
+0) Volt UNDEF=63
+1) Volt UNDEF=79
+2) Volt UNDEF=99
+3) Volt UNDEF=107
+4) Volt UNDEF=158
+5) Volt UNDEF=177
+6) Volt UNDEF=142
+7) Volt UNDEF=101
+8) Volt 177 cond 0
+9) Volt UNDEF=31
+10) Volt UNDEF=63
+11) Volt UNDEF=79
+12) Volt UNDEF=99
+13) Volt UNDEF=107
+14) Volt UNDEF=158
+15) Volt UNDEF=179
+16) Volt UNDEF=142
+17) Volt UNDEF=101
+18) Volt 179 cond 1
+19) Volt UNDEF=31
+20) Volt UNDEF=63
+21) Volt UNDEF=79
+22) Volt UNDEF=99
+23) Volt UNDEF=107
+24) Volt UNDEF=158
+25) Volt UNDEF=175
+26) Volt UNDEF=142
+27) Volt UNDEF=101
+28) Volt 175 cond 1
+29) Volt UNDEF=31
+30) Volt UNDEF=63
+31) Volt UNDEF=79
+32) Volt UNDEF=99
+33) Volt UNDEF=107
+34) Volt UNDEF=158
+35) Volt UNDEF=170
+36) Volt UNDEF=142
+37) Volt UNDEF=101
+38) Volt 170 cond 0
+39) Volt UNDEF=31
+40) Volt UNDEF=63
+41) Volt UNDEF=79
+42) Volt UNDEF=99
+43) Volt UNDEF=107
+44) Volt UNDEF=158
+45) Volt UNDEF=177
+46) Volt UNDEF=142
+47) Volt UNDEF=101
+48) Volt 177 cond 0
+49) Volt UNDEF=31
+50) Volt UNDEF=63
+51) Volt UNDEF=79
+52) Volt UNDEF=99
+53) Volt UNDEF=107
+54) Volt UNDEF=158
+55) Volt UNDEF=205
+56) Volt UNDEF=142
+57) Volt UNDEF=101
+58) Volt 205 cond 2
+59) Volt UNDEF=31
+60) Volt UNDEF=63
+61) Volt UNDEF=79
+62) Volt UNDEF=99
+63) Volt UNDEF=107
+64) Volt UNDEF=158
+65) Volt UNDEF=201
+66) Volt UNDEF=142
+67) Volt UNDEF=101
+68) Volt 201 cond 2
+69) Volt UNDEF=31
+70) Volt UNDEF=63
+71) Volt UNDEF=79
+72) Volt UNDEF=99
+73) Volt UNDEF=107
+74) Volt UNDEF=158
+75) Volt UNDEF=205
+76) Volt UNDEF=142
+77) Volt UNDEF=101
+78) Volt 205 cond 2
+79) Volt UNDEF=31
+80) Volt UNDEF=63
+81) Volt UNDEF=79
+82) Volt UNDEF=99
+83) Volt UNDEF=107
+84) Volt UNDEF=158
+85) Volt UNDEF=189
+86) Volt UNDEF=142
+87) Volt UNDEF=101
+88) Volt 189 cond 1
+89) Volt UNDEF=31
+
+3 - эксперимент, когда getWaveMax возвращает не максимальное, а усредненное значение (алгоритм от которого я решил отказаться)
+$ ./sven600_3
+Test 1. One wave 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 300=T(318) 100=T(U) 40=T(U) 20=T(U) 0=T(U) 0=T(U) 
+Test 2. One distorted wave 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 320=T(U) 330=T(U) 320=T(U) 310=T(U) 100=T(316) 0=T(U) 
+Test 3. One dist wave second huge 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 320=T(U) 330=T(U) 340=T(U) 350=T(U) 320=T(U) 310=T(U) 100=T(320) 0=T(U) 
+Test 4. Two waves 0=T(U) 10=T(U) 20=T(U) 30=T(U) 310=T(U) 320=T(U) 340=T(U) 310=T(U) 290=T(318) 330=T(U) 330=T(U) 325=T(U) 320=T(U) 310=T(U) 100=T(316) 0=T(U) 
+Test 5 318 == 340. One wave
+Test 6 316 == 340. One distorted wave
+Test 7 320 == 350. One dist wave second huge
+Test 8 316 == 330. Two waves, check both
+Test 9 318 == 340. Two waves, check only first
+Test 10. A lot of small waves 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 350=T(U) 100=T(U) 
+Test 11. A lot of small waves 2 100=T(U) 350=T(U) 350=T(U) 100=T(350) 350=T(U) 350=T(U) 100=T(350) 350=T(U) 350=T(U) 100=T(350) 350=T(U) 350=T(U) 100=T(350)
