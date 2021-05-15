@@ -1,0 +1,2 @@
+Как запустить симуляцию с отладкой:
+simavr -g -m attiny13a blink.elf

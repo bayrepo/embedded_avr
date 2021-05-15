@@ -1,0 +1,4 @@
+Как собрать программу для тестирования:
+gcc -o blink_test main.c -I/usr/local/include/simavr/ -lsimavr
+Как собрать файл прошивки для симуляции:
+avr-gcc -O3 -g -o blink.elf blink.c -mmcu=attiny13a

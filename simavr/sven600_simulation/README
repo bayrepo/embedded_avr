@@ -1,0 +1,6 @@
+Как создать прошивку для симуляции:
+avr-gcc -Os -g -o sven600.elf sven600.c -mmcu=attiny26
+Как преобразовать elf в bin:
+avr-objcopy -O binary sven600.elf sven600.bin
+Как собрать тестовую программу для прошивки:
+gcc -o sven_test main.c -I/usr/local/include/simavr/ -lsimavr -lm -g -O0
